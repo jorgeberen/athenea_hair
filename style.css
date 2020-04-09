@@ -162,4 +162,72 @@
 .footer .map {
   margin: auto;
 }
+
+.footer .map iframe {
+  width: 700px;
+  height: 380px;
+}
+
+@media only screen and (max-width: 400px) {
+  .footer .map iframe {
+    width: 100px !important;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .photos .photo-caroussel {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    grid-auto-flow: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
+  }
+  .wrap-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    margin: auto auto 0 auto;
+    color: #fff;
+  }
+  .wrap-section .services {
+    list-style: none;
+    padding-top: 1em;
+    padding-left: 0;
+    margin: auto auto 0 auto;
+    font-size: 14px !important;
+    text-align: center;
+  }
+  .wrap-section .services li {
+    padding-bottom: 0.5em;
+  }
+  .wrap-section .vl {
+    display: none;
+    width: 300px;
+    height: 2px;
+    background-color: #ff0062;
+  }
+  .wrap-section .opening-times {
+    margin: auto auto 0 auto;
+    font-size: 14px !important;
+    text-align: center;
+  }
+  .wrap-section .opening-times h5 {
+    padding: 0 !important;
+  }
+  .footer .map iframe {
+    width: 500px;
+    height: 200px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
