@@ -1,22 +1,3 @@
-.brand {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-family: "Courgette", cursive;
-  width: 100%;
-}
-
-.brand img {
-  margin: auto;
-  padding: 1em;
-  width: 150px;
-  border: 1px solid #000;
-}
-
 .jumbotron {
   background-color: rgba(255, 182, 193, 0.7);
   margin-bottom: 0;
@@ -34,6 +15,25 @@
   height: 100%;
   opacity: 0.4;
   z-index: -1;
+}
+
+.jumbotron .brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Courgette", cursive;
+  width: 100%;
+}
+
+.jumbotron .brand img {
+  margin: auto;
+  padding: 1em;
+  width: 150px;
+  border: 1px solid #000;
 }
 
 .jumbotron h3,
@@ -85,7 +85,6 @@
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  max-width: 900px;
   margin: auto;
   color: #fff;
 }
@@ -93,6 +92,7 @@
 #main-content .services {
   list-style: none;
   padding-top: 1em;
+  padding-left: 0;
   margin: auto;
 }
 
@@ -104,10 +104,8 @@
   width: 2px;
   height: 500px;
   background-color: #ff0062;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0;
+  margin: auto;
+  position: absolute;
 }
 
 #main-content .opening-times {
@@ -134,20 +132,16 @@
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 1em;
-  max-width: 900px;
   margin: auto;
 }
 
 .footer .contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0 0.3em;
+  padding: 0;
   margin: auto;
-  width: 700px;
+}
+
+.footer .contact .contact-info {
+  text-align: center;
 }
 
 .footer .contact p {
@@ -156,15 +150,16 @@
 
 .footer .contact ul {
   list-style: none;
+  padding: 0;
 }
 
 .footer .contact ul li {
   display: inline-block;
   font-size: 3em;
-  padding: 0 0 0 0.3em;
+  padding: 0;
 }
 
 .footer .map {
-  margin: 0 auto;
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */
