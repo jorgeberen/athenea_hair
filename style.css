@@ -29,6 +29,10 @@
   width: 100%;
 }
 
+.jumbotron .brand h1 {
+  font-size: calc(3.75vw + 28px);
+}
+
 .jumbotron .brand img {
   margin: auto;
   padding: 1em;
@@ -40,6 +44,7 @@
 .jumbotron p {
   font-family: "Lobster Two", cursive;
   font-weight: 400;
+  font-size: calc(1.5625vw + 10px);
 }
 
 .photos {
@@ -85,7 +90,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  margin: auto;
+  height: 100%;
   color: #fff;
 }
 
@@ -151,6 +156,7 @@
 .footer .contact ul {
   list-style: none;
   padding: 0;
+  text-align: center;
 }
 
 .footer .contact ul li {
@@ -166,13 +172,6 @@
 .footer .map iframe {
   width: 700px;
   height: 380px;
-}
-
-@media only screen and (max-width: 400px) {
-  .footer .map iframe {
-    width: 100px !important;
-    height: 200px;
-  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -212,10 +211,12 @@
     padding-bottom: 0.5em;
   }
   .wrap-section .vl {
-    display: none;
-    width: 300px;
-    height: 2px;
+    display: block;
+    width: 300px !important;
+    height: 2px !important;
     background-color: #ff0062;
+    position: relative !important;
+    margin: auto;
   }
   .wrap-section .opening-times {
     margin: auto auto 0 auto;
@@ -227,7 +228,14 @@
   }
   .footer .map iframe {
     width: 500px;
-    height: 200px;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .footer .map iframe {
+    width: 300px !important;
+    height: 200px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

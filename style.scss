@@ -9,6 +9,15 @@
 // font-family: 'Parisienne', cursive;
 
 // Styling of the header/hero with logo, title and subtitle
+$display-wide: 1920;
+$display-narrow: 320;
+
+@mixin fluid($property, $minValue, $maxValue) {
+  $x: ($maxValue - $minValue)/ ($display-wide - $display-narrow);
+  $y: $maxValue - $display-wide * $x;
+  #{$property}: calc(#{100 * $x}vw + #{$y}px);
+}
+
 .jumbotron {
   background-color: rgba(255, 182, 193, 0.7);
   margin-bottom: 0;
@@ -29,7 +38,9 @@
     display: flex;
     flex-direction: column;
     font-family: "Courgette", cursive;
-
+    h1 {
+      @include fluid("font-size", 40, 100);
+    }
     width: 100%;
     img {
       margin: auto;
@@ -42,6 +53,7 @@
   p {
     font-family: "Lobster Two", cursive;
     font-weight: 400;
+    @include fluid("font-size", 15, 40);
   }
 }
 
@@ -81,7 +93,7 @@
     justify-content: center;
     position: relative;
     // max-width: 900px;
-    margin: auto;
+    height: 100%;
     color: #fff;
   }
   .services {
@@ -140,6 +152,7 @@
     ul {
       list-style: none;
       padding: 0;
+      text-align: center;
       li {
         display: inline-block;
         font-size: 3em;
@@ -152,19 +165,6 @@
     iframe {
       width: 700px;
       height: 380px;
-    }
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .footer {
-    .map {
-      // display: none;
-      // margin: auto;
-      iframe {
-        width: 100px !important;
-        height: 200px;
-      }
     }
   }
 }
@@ -200,12 +200,12 @@
     }
 
     .vl {
-      display: none;
-      width: 300px;
-      height: 2px;
+      display: block;
+      width: 300px !important;
+      height: 2px !important;
       background-color: rgb(255, 0, 98);
-      // justify-content: center;
-      // margin: auto;
+      position: relative !important;
+      margin: auto;
     }
 
     .opening-times {
@@ -225,7 +225,17 @@
       // margin: auto;
       iframe {
         width: 500px;
-        height: 200px;
+        height: 300px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .footer {
+    .map {
+      iframe {
+        width: 300px !important;
+        height: 200px !important;
       }
     }
   }
