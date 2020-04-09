@@ -184,6 +184,9 @@
             justify-content: center;
     gap: 20px;
   }
+  .photos img {
+    width: 130px;
+  }
   .wrap-section {
     display: -webkit-box;
     display: -ms-flexbox;
