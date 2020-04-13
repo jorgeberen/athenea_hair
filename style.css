@@ -96,13 +96,13 @@
 
 #main-content .services {
   list-style: none;
-  padding-top: 1em;
   padding-left: 0;
   margin: auto;
 }
 
 #main-content .services li {
   padding-bottom: 0.5em;
+  font-size: 20px;
 }
 
 #main-content .vl {
@@ -119,6 +119,10 @@
 
 #main-content .opening-times h5 {
   padding-right: 2em;
+}
+
+#main-content .opening-times p {
+  font-size: 18px;
 }
 
 .footer {
@@ -212,6 +216,7 @@
   }
   .wrap-section .services li {
     padding-bottom: 0.5em;
+    font-size: 14px !important;
   }
   .wrap-section .vl {
     display: block;
@@ -223,11 +228,13 @@
   }
   .wrap-section .opening-times {
     margin: auto auto 0 auto;
-    font-size: 14px !important;
     text-align: center;
   }
   .wrap-section .opening-times h5 {
     padding: 0 !important;
+  }
+  .wrap-section .opening-times p {
+    font-size: 14px !important;
   }
   .footer .map iframe {
     width: 500px;

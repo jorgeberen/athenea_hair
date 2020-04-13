@@ -98,11 +98,12 @@ $display-narrow: 320;
   }
   .services {
     list-style: none;
-    padding-top: 1em;
+
     padding-left: 0;
     margin: auto;
     li {
       padding-bottom: 0.5em;
+      font-size: 20px;
     }
   }
 
@@ -120,6 +121,9 @@ $display-narrow: 320;
 
     h5 {
       padding-right: 2em;
+    }
+    p {
+      font-size: 18px;
     }
   }
 }
@@ -199,6 +203,7 @@ $display-narrow: 320;
       text-align: center;
       li {
         padding-bottom: 0.5em;
+        font-size: 14px !important;
       }
     }
 
@@ -213,11 +218,14 @@ $display-narrow: 320;
 
     .opening-times {
       margin: auto auto 0 auto;
-      font-size: 14px !important;
+
       text-align: center;
 
       h5 {
         padding: 0 !important;
+      }
+      p {
+        font-size: 14px !important;
       }
     }
   }
